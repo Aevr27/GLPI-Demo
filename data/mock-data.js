@@ -1,7 +1,7 @@
 /* Datos ficticios para la demostración visual. Ningún dato real. */
 window.DEMO_DATA = {
   entidad: "Entidad raíz > Demo Corp",
-  usuarioActual: { nombre: "Laura Méndez", login: "lmendez", perfil: "Super-Admin" },
+  usuarioActual: { nombre: "Edgar Salinas", login: "esalinas", perfil: "Super-Admin" },
 
   estados: {
     1: { nombre: "Nuevo", clase: "st-new" },
@@ -29,7 +29,7 @@ window.DEMO_DATA = {
   ],
 
   usuarios: [
-    { id: 1, login: "lmendez", nombre: "Laura", apellido: "Méndez", email: "lmendez@demo.local", telefono: "100", perfil: "Super-Admin", grupo: "Soporte N2 - Sistemas", activo: true, tecnico: true, ultimoAcceso: "2026-11-18 08:42" },
+    { id: 1, login: "esalinas", nombre: "Edgar", apellido: "Salinas", email: "esalinas@demo.local", telefono: "100", perfil: "Super-Admin", grupo: "Soporte N2 - Sistemas", activo: true, tecnico: true, ultimoAcceso: "2026-11-18 08:42" },
     { id: 2, login: "jortega", nombre: "Javier", apellido: "Ortega", email: "jortega@demo.local", telefono: "101", perfil: "Técnico", grupo: "Soporte N1", activo: true, tecnico: true, ultimoAcceso: "2026-11-18 08:15" },
     { id: 3, login: "pnavarro", nombre: "Paula", apellido: "Navarro", email: "pnavarro@demo.local", telefono: "102", perfil: "Técnico", grupo: "Soporte N1", activo: true, tecnico: true, ultimoAcceso: "2026-11-18 07:58" },
     { id: 4, login: "drivas", nombre: "Diego", apellido: "Rivas", email: "drivas@demo.local", telefono: "103", perfil: "Técnico", grupo: "Soporte N2 - Sistemas", activo: true, tecnico: true, ultimoAcceso: "2026-11-17 18:20" },
@@ -78,7 +78,7 @@ window.DEMO_DATA = {
       seguimiento: [ { autor: "Paula Navarro", fecha: "2026-11-12 09:00", texto: "Sustituido el cable DisplayPort.", tipo: "solucion" } ] },
     { id: 1033, titulo: "Discrepancia de stock en módulo de inventario", tipo: "Incidencia", estado: 2, prioridad: 4, urgencia: 3, impacto: 5, categoria: 9, solicitante: "Elena Vega", asignado: "Carmen Flores", grupo: "Aplicaciones", apertura: "2026-11-10 10:00", actualizacion: "2026-11-17 13:20", vencimiento: "2026-11-18 10:00", ubicacion: "Almacén", descripcion: "El stock mostrado no coincide con el recuento físico de la semana.", seguimiento: [] },
     { id: 1032, titulo: "Solicitud de segundo monitor", tipo: "Solicitud", estado: 4, prioridad: 1, urgencia: 1, impacto: 1, categoria: 4, solicitante: "Marcos Serrano", asignado: "Paula Navarro", grupo: "Soporte N1", apertura: "2026-11-08 09:45", actualizacion: "2026-11-10 11:00", vencimiento: "2026-11-22 09:45", ubicacion: "Oficina Central > Planta 2", descripcion: "Solicito un segundo monitor para el puesto de trabajo.", seguimiento: [] },
-    { id: 1031, titulo: "Caída del servidor de archivos", tipo: "Incidencia", estado: 6, prioridad: 6, urgencia: 5, impacto: 5, categoria: 10, solicitante: "Laura Méndez", asignado: "Diego Rivas", grupo: "Soporte N2 - Sistemas", apertura: "2026-11-05 07:30", actualizacion: "2026-11-05 09:10", vencimiento: "2026-11-05 08:30", ubicacion: "CPD", descripcion: "Las unidades de red compartidas no responden.",
+    { id: 1031, titulo: "Caída del servidor de archivos", tipo: "Incidencia", estado: 6, prioridad: 6, urgencia: 5, impacto: 5, categoria: 10, solicitante: "Edgar Salinas", asignado: "Diego Rivas", grupo: "Soporte N2 - Sistemas", apertura: "2026-11-05 07:30", actualizacion: "2026-11-05 09:10", vencimiento: "2026-11-05 08:30", ubicacion: "CPD", descripcion: "Las unidades de red compartidas no responden.",
       seguimiento: [ { autor: "Diego Rivas", fecha: "2026-11-05 09:10", texto: "Reiniciado el servicio de almacenamiento. Análisis de causa raíz pendiente en problema asociado.", tipo: "solucion" } ] }
   ],
 
