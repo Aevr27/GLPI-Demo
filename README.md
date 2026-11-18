@@ -20,7 +20,12 @@ base de datos, autenticación ni integración con ningún sistema. Todos los dat
 
 Los tickets creados se guardan en `sessionStorage` (se pierden al cerrar la pestaña).
 
-## Ejecutar (IIS Express existente, sin instalar nada)
+## Abrir la demo
+
+Doble clic en `index.html` (o arrastrarlo a Chrome). No necesita servidor, instalación
+ni conexión a Internet: todo el código y los datos se cargan desde archivos locales.
+
+## Opcional: servir con IIS Express
 
 ```
 dev-local.cmd [puerto]   # sirve esta carpeta en http://localhost:8090 (por defecto)
@@ -30,8 +35,6 @@ stop-demo.cmd [puerto]   # detiene solo el IIS Express de ese puerto
 `dev-local.cmd` (adaptado del Dashboard) usa `iisexpress /path:... /port:8090`, que genera una configuración temporal;
 no modifica el `applicationhost.config` del Dashboard. Si el puerto 8090 está ocupado, el script
 se detiene y lo indica.
-
-Alternativa sin servidor: abrir `index.html` directamente en Chrome (funciona con `file://`).
 
 ## Estructura
 
