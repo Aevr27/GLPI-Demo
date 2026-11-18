@@ -23,11 +23,11 @@ Los tickets creados se guardan en `sessionStorage` (se pierden al cerrar la pest
 ## Ejecutar (IIS Express existente, sin instalar nada)
 
 ```
-start-demo.cmd      # sirve esta carpeta en http://localhost:8090
-stop-demo.cmd       # detiene solo el IIS Express del puerto 8090
+dev-local.cmd [puerto]   # sirve esta carpeta en http://localhost:8090 (por defecto)
+stop-demo.cmd [puerto]   # detiene solo el IIS Express de ese puerto
 ```
 
-`start-demo.cmd` usa `iisexpress /path:... /port:8090`, que genera una configuración temporal;
+`dev-local.cmd` (adaptado del Dashboard) usa `iisexpress /path:... /port:8090`, que genera una configuración temporal;
 no modifica el `applicationhost.config` del Dashboard. Si el puerto 8090 está ocupado, el script
 se detiene y lo indica.
 
@@ -41,7 +41,8 @@ assets/css/app.css
 assets/js/app.js
 assets/images/logo.svg
 data/mock-data.js
-start-demo.cmd / stop-demo.cmd
+Web.config                 # cabeceras de seguridad, sin cache, bloquea .git/.cmd/.md
+dev-local.cmd / stop-demo.cmd
 ```
 
 Sin dependencias externas ni CDNs: funciona sin conexión a Internet.
