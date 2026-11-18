@@ -1,0 +1,10 @@
+# OS / editor
+Thumbs.db
+Desktop.ini
+.DS_Store
+.vs/
+.vscode/
+*.log
+# Local secrets must never be committed
+*.env
+.env*

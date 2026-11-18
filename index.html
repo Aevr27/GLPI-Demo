@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="only light">
+  <title>Mesa de Servicio — Demo visual</title>
+  <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <img src="assets/images/logo.svg" alt="" width="30" height="30">
+        <div class="brand-text">
+          <span class="brand-name">Mesa de Servicio</span>
+          <span class="brand-sub">Demo visual</span>
+        </div>
+      </div>
+      <nav class="nav" id="nav"></nav>
+      <div class="sidebar-foot">Prototipo visual inspirado en GLPI 11 · sin backend · datos ficticios</div>
+    </aside>
+
+    <div class="main">
+      <header class="topbar">
+        <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Mostrar menú">☰</button>
+        <nav class="breadcrumb" id="breadcrumb" aria-label="Ruta"></nav>
+        <div class="topbar-right">
+          <div class="search">
+            <input type="search" id="globalSearch" placeholder="Buscar…" aria-label="Búsqueda global">
+          </div>
+          <span class="entity" title="Entidad activa" id="entity"></span>
+          <button class="icon-btn" title="Notificaciones" aria-label="Notificaciones">🔔<span class="dot"></span></button>
+          <div class="user-menu" id="userMenu" tabindex="0">
+            <span class="avatar" id="avatar"></span>
+            <span class="user-meta"><b id="userName"></b><small id="userProfile"></small></span>
+            <div class="user-dropdown">
+              <a href="#/preferencias">Mis preferencias</a>
+              <a href="#/configuracion">Configuración</a>
+              <hr>
+              <a href="#/" onclick="return false" title="Demo sin autenticación">Cerrar sesión</a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="content" id="view" tabindex="-1"></main>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="data/mock-data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
